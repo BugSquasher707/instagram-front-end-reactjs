@@ -1,0 +1,160 @@
+.mainPageContainer{
+    text-align: center;
+    margin: 0px 10px 0px -20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+} 
+
+.mainPageHr{
+    height: 0px;
+    width: 30%;
+    border: 1px solid #dbdbdb;
+    margin: 0px 15px;
+    margin-top: 40px;
+    transition: all 0.3s;
+}
+
+.uploadFileDiv input{
+    display: none;
+}
+
+.postBtn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to bottom left,#6944C0,#E33A62,#FDBB54);
+    color: white;
+    font-size: 13.5px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-top: 1rem;
+}
+
+.postBtn:hover{
+    cursor: pointer;
+}
+
+.mainPageUploadSection{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.mainPageImgDiv{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #dbdbdb;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainPageSelectedImg{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mainPageUploadBtn{
+    width: 100px;
+    height: 40px;
+    background-color: #ee3469;
+    border: none;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+button:focus{
+    outline: none;
+}
+
+.mainPageUploadBtn:hover{
+    background-color: #b82750;
+}
+
+.mainPagePlusIcon,.mainPageUploadPara{
+    position: absolute;
+    bottom: 30px;
+    left: 2rem;
+    font-size: 16px;
+    color: #ee3469;
+    cursor: pointer;
+}
+
+.mainPageUploadLbl:hover .mainPagePlusIcon{
+    color: #b82750;
+}
+
+.mainPageUploadLbl:hover .mainPageUploadLbl{
+    color: #b82750;
+}
+
+.mainPageUploadPara{
+    bottom: 11px;
+    left: 3.5rem;
+    font-size: 14.5px;
+    color: #ee3469;
+    cursor: pointer;
+}
+
+.textAreaBox{
+    width: 100%;
+    height: 12rem;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    resize: none;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.mainPageImgDiv p{
+    width: 120%;
+    position: absolute;
+    top: 0%;
+    left: 108%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.mainPageImgDiv p span{
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+    .mainPageImgDiv{
+        width: 150px;
+        height: 150px;
+    }
+
+    .mainPageImgDiv p{
+        width: 150%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .mainPageImgDiv{
+        width: 100px;
+        height: 100px;
+    }
+
+    .mainPageImgDiv p{
+        width: 200%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .postBtn{
+        font-size: 12px;
+        width: 120px;
+        height: 35px;
+        margin-top: 1.4rem;
+    }   
+}

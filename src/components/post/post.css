@@ -1,0 +1,143 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+.postContainer{
+    width: 90%;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.postHeader{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
+}
+
+.postUserImage{
+    min-width: 30px;
+    min-height: 30px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.postUsername{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+.likeShareContainer{
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.postLikeShareImage, 
+.postLikeShareImage1, 
+.postLikeShareImage2,
+.postLikeShareImage3{
+    width: 25px;
+    height:25px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.postLikeShareImage1{
+    position: absolute;
+    right: 20px;
+}
+
+.postLikeShareImage2{
+    position: absolute;
+    top: 2px;
+    left: 0%;
+}
+
+.postLikeShareImage4{
+    width: 21px;
+}
+
+.desDiv{
+    margin-top: 0.5rem;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.desDiv > span{
+    font-weight: 400;
+    margin-left: 0.3rem;
+    text-transform: none;
+}
+
+.likeDiv{
+    margin-top: 0px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.postComment {
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.postComment > span{
+    font-weight: 700;
+}
+
+.postCommentInp{
+    height: 50px;
+    width: 100%;
+    border: 0px;
+    border-top: 1px solid #dbdbdb;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 55px;
+}
+
+.commentPostBtn{
+    position: absolute;
+    bottom: 9.5px;
+    right: 10px;
+    width: 50px;
+    height: 28px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #037fd1;
+}
+
+.commentPostBtn1{
+    color: #9ed8ff;
+}
+
+.commentPostBtn1:hover{
+    cursor: default;
+}
+
+@media only screen and (max-width: 320px) {
+    .postLikeShareImage,
+    .postLikeShareImage1,
+    .postLikeShareImage2,
+    .postLikeShareImage3{
+        width: 20px;
+    }
+
+    .postLikeShareImage2 + .postLikeShareImage3{
+        margin-left: 50px !important;
+    }
+    
+}

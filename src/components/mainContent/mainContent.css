@@ -1,0 +1,15 @@
+body {
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+
+.containerDiv {
+    width: 47% !important;
+    height: auto;
+    overflow-y: scroll;
+    padding-bottom: 2rem;
+}
+
+.containerDiv::-webkit-scrollbar {
+    display: none;
+}

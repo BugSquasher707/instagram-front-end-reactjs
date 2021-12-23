@@ -1,0 +1,153 @@
+.navBarFixed{
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 1000;
+}
+
+.navContainer{
+    height: 54px;
+    background-color: white;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.navCol{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+
+.navLogo{
+    width: 95px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.searchInp{
+    height: 25px;
+    width: 200px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 25px;
+    color: gray;
+}
+
+.searchIcon{
+    color: #c7c5c5;
+    font-size: 11px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.searchInp:focus{
+    text-align: left;
+    color: #000;
+}
+
+.searchInp:focus + .searchIcon{
+    display: none;
+}
+
+.navIcon {
+    width: 20px;
+    margin:15px 10px;
+    cursor: pointer;
+}
+
+.navbarUserImg {
+    width: 25px;
+    margin:15px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.uploadIcon{
+    font-size: 22px;
+    margin-top: 0.5rem;
+    margin-left: -0.5rem;
+}
+
+.userPhoto{
+    font-size: 14px;
+    font-weight: 400;
+    transition: all .3s;
+    position: relative;
+    top: 0.25rem;
+    left: 0.4rem;
+}
+
+.userPhoto:hover{
+    cursor: pointer;
+}
+
+.logoutBtn{
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #0395F6;
+    color: #fff;
+    transition: all .3s;
+    margin-bottom: 0.5rem;
+}
+
+.logoutBtn:hover{
+    background-color: #28a8fd;
+}
+
+.container{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.container:hover{
+    background-color: #eeebeb;
+}
+
+@media only screen and (max-width: 768px) {
+    .navCol{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navCol{
+        justify-content: center;
+    }
+
+    .navLogo{
+        margin-left: -4rem !important;
+    }
+    
+    .navCol1{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .navIcon{
+        width: 15px;
+        margin: 15px 7px;
+    }
+
+    .navLogo{
+        margin-left: -1rem !important;
+    }
+
+    .navbarUserImg{
+        width: 20px;
+    }
+}

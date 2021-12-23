@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainDiv{
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContent{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}   
+
+.phoneImg{
+    width: 450px;
+    height: 600px;
+    position: relative;
+    top: 0px;
+}
+
+.loginRightSide{
+    width: 350px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+    background-color: white;
+}
+
+.loginPageLogo{
+    width: 175px;
+    margin-top: 25px;
+}
+
+.orContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: default;
+}
+
+.orHr{
+    width: 100px;
+    height: 0px;
+    margin-top: 10px;
+    border:1px solid #DBDBDB;
+}
+
+.orContent{
+    margin: 0px 10px;
+    color: #8E8E8E;
+    font-size: 14px;
+}
+
+.loginFbImg{
+    margin-top: 20px;
+}
+
+.fbPara{
+    font-size: 14px;
+    color: #395185;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.loginForgot{
+    width: fit-content;
+    color: rgba(0,55,107,1);
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+.signUpOption{
+    margin-top: 25px;
+    height:56px;
+    width: 350px;
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    text-align: center;
+}
+
+.loginSignIn{
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: default;
+}
+
+.loginSignUp{
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: default;
+}
+
+.signInUpOpt{
+    color: #0395F6;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.downloadContainer{
+    height: 105px;
+    width: 350px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: default;
+}
+
+.downloadOption{
+    margin-top: 20px;
+}
+
+.downloadOptionImg{
+    width: 136px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.loginInp{
+    width:250px;
+    height: 35px;
+    margin:5px;
+    border: 1px solid #DBDBDB;
+    background-color: #FAFAFA;
+    padding-left: 10px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.loginBtn{
+    width:250px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background-color: #0395F6;
+    color: white;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+.loginBtn:hover{
+    cursor: pointer;
+    background-color: #28a8fd;
+}
+
+input:focus{
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .loginContent{
+        padding: 0% 0%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .loginContent{
+        padding: 0%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .loginContent{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .loginRightSide{
+        width: 320px;
+        margin-left: 1.4rem;
+    }
+
+    .signUpOption{
+        width: 320px;
+        margin-left: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+
+    .loginRightSide{
+        width: 310px;
+        margin-left: 2rem;
+    }
+
+    .signUpOption{
+        width: 310px;
+        margin-left: 2rem;
+    }
+
+    .downloadOptionImg{
+        width: 106px;
+    }
+
+}

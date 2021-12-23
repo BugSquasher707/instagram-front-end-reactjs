@@ -1,0 +1,52 @@
+.sorryDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0% 2rem;
+    box-sizing: border-box;
+}
+
+.sorryDiv h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.sorryDiv button{
+    width: 120px;
+    height: 40px;
+    background-color: #0395F6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    font-size: 14px;
+    transition: all .3s;
+    margin-top: 1rem;
+}
+
+.sorryDiv button:hover{
+    cursor: pointer;
+    background-color: #28a8fd;
+}
+
+@media only screen and (max-width: 576px) {
+    .sorryDiv h1{
+        font-size: 22px;
+    }
+
+    .sorryDiv button{
+        width: 110px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .sorryDiv h1{
+        font-size: 18px;
+    }
+}
